@@ -24,10 +24,10 @@ while len(task) != 1:
     for index, symbol in enumerate(task):
         if symbol == "+":
             task.insert(index + 1, float(task[index - 2]) + float(task[index - 1])) # Calculate result of the 2 numbers before operand
-            del task[index]     # Delete operand
+            del task[index] # Delete operand
             del task[index - 1] # Delete 2. number
             del task[index - 2] # Delete 1. number
-            break               # Break to update indices
+            break # Break to update indices
         elif symbol == "-":
             task.insert(index + 1, float(task[index - 2]) - float(task[index - 1]))
             del task[index]
@@ -49,5 +49,5 @@ while len(task) != 1:
 
 p = requests.post(sol_url, json.dumps({"token": int(task[0])})).text
 
-print(int(task[0]))       		# Print solution
-print(p) 						# Print code "Success: TMT{cLVgwaS4j3JJorwe1GCw}"
+print(int(task[0])) # Print solution
+print(p) # Print code "Success: TMT{cLVgwaS4j3JJorwe1GCw}"
