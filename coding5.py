@@ -49,5 +49,5 @@ while len(task) != 1:
 
 p = requests.post(sol_url, json.dumps({"token": int(task[0])})).text
 
-print(int(task[0])) # Print solution
-print(p) # Print code "Success: TMT{cLVgwaS4j3JJorwe1GCw}"
+print(int(task[0]))       		# Print solution
+print(p) 						# Print code "Success: TMT{cLVgwaS4j3JJorwe1GCw}"
