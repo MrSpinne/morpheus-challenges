@@ -1,4 +1,5 @@
 import requests
+import json
 
 chal_url = "https://cc.the-morpheus.de/challenges/1/"
 sol_url = "https://cc.the-morpheus.de/solutions/1/"
