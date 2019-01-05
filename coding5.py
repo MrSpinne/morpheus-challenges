@@ -12,10 +12,10 @@ symbol = ""
 
 # Convert string into list (e.g. "22 + 34" -> ["22", "+", "34"]
 for char in g + " ":
-    if char != " ":             # Add every char of number (or operand) to symbol
+    if char != " ": # Add every char of number (or operand) to symbol
         symbol += char
     else:
-        if symbol != "":        # Symbol ended, add it to list and continue (reset symbol) 
+        if symbol != "": # Symbol ended, add it to list and continue (reset symbol) 
             task.append(symbol)
         symbol = ""
 
