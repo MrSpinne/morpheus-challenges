@@ -11,5 +11,5 @@ g["list"].sort()
 num = g["list"][-g["k"]]
 p = requests.post(sol_url, json.dumps({"token": num})).text
 
-print(num) # Print solution
-print(p) # Print code "Success: TMT{S0SpkHzubAmCu7H3r5wR}"
+print(num) 	# Print solution
+print(p) 	# Print code "Success: TMT{S0SpkHzubAmCu7H3r5wR}"
