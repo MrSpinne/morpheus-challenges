@@ -11,5 +11,5 @@ num = g["k"]
 index = g["list"].index(num)
 p = requests.post(sol_url, json.dumps({"token": index})).text
 
-print(index)	# Print solution
-print(p)		# Print code "Success: TMT{AlwiUi8lp8du3iFTs8kc}"
+print(index)    # Print solution
+print(p)        # Print code "Success: TMT{AlwiUi8lp8du3iFTs8kc}"
