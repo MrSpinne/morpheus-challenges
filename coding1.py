@@ -1,3 +1,5 @@
+# Get value from chal_url and post it to sol_url.
+
 import requests
 import json
 
